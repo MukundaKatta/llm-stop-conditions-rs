@@ -1,0 +1,17 @@
+[package]
+name = "llm-stop-conditions"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Composable stop conditions for LLM agent loops: max iters, USD, tokens, seconds, no-progress, custom."
+keywords = ["llm", "agents", "ai", "stop", "loop"]
+categories = ["asynchronous", "rust-patterns"]
+repository = "https://github.com/MukundaKatta/llm-stop-conditions-rs"
+readme = "README.md"
+
+[features]
+default = []
+serde = ["dep:serde"]
+
+[dependencies]
+serde = { version = "1", optional = true, features = ["derive"] }
